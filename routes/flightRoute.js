@@ -3,8 +3,6 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/flightController');
 
-router.get('/', controller.example)
-
 router.post('/book-flight', controller.postBookFlight)
 
 router.get('/my-flights', controller.getAllFlights)
